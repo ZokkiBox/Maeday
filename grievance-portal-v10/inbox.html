@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inbox 💌</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<video autoplay muted loop playsinline class="bgvid">
+  <source src="assets/bg.mov" type="video/mp4">
+</video>
+<div class="overlay"></div>
+<main class="card">
+  <header class="card__header"><h1 class="title">Inbox 💌</h1><p class="subtitle">Private grievances for Malachi</p></header>
+  <section id="gate" class="gate"><input type="password" id="passcode" placeholder="Enter passcode">
+    <button class="btn" id="unlock">Unlock</button><p class="tiny">Default passcode is <code>heart</code>.</p></section>
+  <section id="inbox" class="hidden"><div id="items" class="list"></div></section>
+</main>
+<script src="app.js"></script></body></html>

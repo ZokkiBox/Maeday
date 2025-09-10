@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maeday's Grievance Portal 🌻</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<video autoplay muted loop playsinline class="bgvid">
+  <source src="assets/bg.mov" type="video/mp4">
+</video>
+<div class="overlay"></div>
+
+<main class="card">
+  <header class="card__header">
+    <h1 class="title">Maeday's Grievance Portal 🌻</h1>
+    <p class="subtitle">Now you can submit your cute little grievances for my viewing pleasure.</p>
+  </header>
+
+  <form id="grievanceForm" class="form">
+    <label class="field"><span>Title</span>
+      <input type="text" name="title" placeholder="Quick title..." required></label>
+
+    <label class="field"><span>What's bothering you?</span>
+      <textarea name="message" rows="5" placeholder="Tell me everything..." required></textarea></label>
+
+    <label class="field"><span>Attach a picture (optional)</span>
+      <input type="file" name="image" accept="image/*"></label>
+
+    <div class="row">
+      <label class="field"><span>Mood</span>
+        <select name="mood">
+          <option value="🥺">🥺 Tender</option><option value="😤">😤 Annoyed</option>
+          <option value="😢">😢 Sad</option><option value="😵">😵 Confused</option>
+          <option value="😡">😡 Big Mad</option><option value="😊">😊 Just sharing</option>
+          <option value="😍">😍 Lovey</option><option value="🤔">🤔 Thoughtful</option>
+          <option value="😂">😂 Silly</option><option value="🤯">🤯 Overwhelmed</option>
+        </select></label>
+
+      
+      
+      <label class="field">
+        <span>Severity (1–10)</span>
+        <select name="severity">
+          <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+          <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+        </select>
+      </label>
+    
+    
+    </div>
+
+    <label class="field"><span>Desired vibe from me</span>
+      <select name="response">
+        <option value="listen">Just listen &amp; validate</option>
+        <option value="solutions">Help me fix it</option>
+        <option value="cuddle">Cuddles + snacks</option>
+        <option value="apology">You probably owe me an apology 😌</option>
+      <option value="want">I want this!</option>
+      </select></label>
+
+    <p class="ack">Your note will go into my private inbox. I’ll read it soon. 💌</p>
+    <button class="btn" type="submit">Send to Him 💘</button>
+  </form>
+
+  <section class="success hidden" id="success">
+    <h2>Thank you, <span id="who">love</span> 💞</h2>
+    <p>Your grievance has been sent to <span id="toName">Malachi</span>.<br><small>(He will think about it.)</small></p>
+    <button class="btn" id="another">Submit Another</button>
+  </section>
+
+  <footer class="footer"><a class="pill" href="inbox.html">For Him → Inbox</a></footer>
+</main>
+<script src="app.js"></script>
+</body></html>
