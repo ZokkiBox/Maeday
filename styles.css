@@ -1,0 +1,16 @@
+.bgvid{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.overlay{position:fixed;inset:0;background:rgba(255,182,193,.4);z-index:1}
+.card{position:relative;z-index:2;max-width:800px;margin:6vh auto;padding:2rem;background:rgba(255,255,255,.9);border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,.2)}
+.title{font-family:Pacifico,cursive;text-align:center}
+.subtitle{text-align:center;opacity:.9;margin-bottom:1rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:740px){.row{grid-template-columns:1fr}}
+.field{display:block;margin:1rem 0}.field>span{display:block;font-weight:600;margin-bottom:.3rem}
+input,textarea,select{width:100%;padding:.9rem 1rem;border:2px solid #ffc1d9;border-radius:14px;background:#fff}
+.btn{background:#ff79b0;color:#fff;padding:.8rem 1.2rem;border:none;border-radius:999px;font-weight:700;cursor:pointer}
+.pill{padding:.5rem 1rem;background:#fff;border:2px solid #ff79b0;border-radius:999px;text-decoration:none;color:#45243a}
+.footer{text-align:center;margin-top:1rem}
+.hidden{display:none}
+.item{background:#fff;border:1px solid #ffc1d9;border-radius:14px;padding:1rem;margin:.6rem 0}
+
+
